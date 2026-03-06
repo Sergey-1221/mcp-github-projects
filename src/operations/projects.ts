@@ -607,7 +607,7 @@ export class ProjectOperations {
     >(getProjectItems, {
       id: params.id,
       first: params.first || 20,
-      after: params.after,
+      after: params.after || null,
     });
 
     if (!result.node) {
